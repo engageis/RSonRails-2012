@@ -7,6 +7,7 @@ body
 
 .bg
   z-index: 999
+  margin-left: -10px
   position: fixed
   height: 100%
   width: 2px
@@ -76,8 +77,18 @@ header
   margin-left: 40px
   font-family: "League Gothic"
   font-size: 1.5em
+  .msg
+    font-family: 'Shadows Into Light', cursive
+    color: #FFF
+    line-height: 1.3em
+    padding-bottom: 76px
+    +rotate(-10deg)
+    background: 
+      image: url(asset_path("arrow.png", "image"))
+      repeat: no-repeat
+      position: 151px 50px
   ul
-    margin-top: 45%
+    margin-top: 20%
   li
     padding-left: 20px
     margin-top: 10px
@@ -92,7 +103,6 @@ header
         position: 0 0
       height: 37px
       width: 187px
-      margin-top: 40px
       +hide-text
       a
         display: block
@@ -154,3 +164,41 @@ header
   .links
     font-size: 0.9em
     float: right
+
+
+
+#patrocinio
+  padding: 60px 0
+  color: #6B6A5E
+  border-top: 4px solid #FFF
+  border-bottom: 4px solid #FFF
+  background:
+    color: #CCC
+    image: url(asset_path("bg-patrocinio.png", "image"))
+    repeat: repeat
+
+  a.btn
+    text-decoration: none
+    background: #222
+    padding: 10px
+    +border-radius(5px)
+    &:hover
+      background: #C22
+
+  .patrocinio
+    +grid(12)
+
+  .organizacao, .apoio
+    margin-top: 40px
+    float: left
+    +grid(6)
+    li
+      float: left
+      margin: 0 10px
+
+footer
+  +grid-container
+  padding: 10px
+  color: $cream
+  font-size: 0.7em
+  text-align: right

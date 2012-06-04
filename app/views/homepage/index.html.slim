@@ -30,6 +30,7 @@ header
             a href="#palestrantes" Palestrantes
           li
             a href="#palestras" Palestras
+        .msg As incrições já estão abertas!
         li.register
           a href="http://rsonrails.malaio.me/" Garanta sua vaga
 
@@ -63,15 +64,39 @@ header
 
   #patrocinio
     .container
-      strong Patrocínio
-      a href="mailto:rafael.bandeira@thoughtworks.com" Coloque a sua empresa aqui!
-      strong Organização
-      ul
-        li
-          a href="http://join.thoughtworks.com" ThoughtWorks
-        li
-          a href="http://engage.is" Engage
-      strong Apoio
-      a href="mailto:rafael.bandeira@thoughtworks.com" Tem alguma idéia? Entre em contato!
+      .patrocinio
+        strong.title Patrocínio
+        a.btn href="mailto:rafael.bandeira@thoughtworks.com" Coloque a sua empresa aqui!
+      .organizacao
+        strong.title Organização
+        ul
+          li
+            a href="http://join.thoughtworks.com" 
+              =image_tag("organization/tw.png", :alt => 'ThoughtWorks')
+
+          li
+            a href="http://engage.is"
+              =image_tag("organization/engage.png", :alt => 'Engage')
+      .apoio
+        strong.title Apoio
+        a.btn href="mailto:rafael.bandeira@thoughtworks.com" Tem alguma idéia? Entre em contato!
+      .clear
+
+
+footer
+  .right
+    | This page was made with 
+    = link_to("Slim", "http://slim-lang.com", target: "blank")
+    | , 
+    = link_to("Saas", "http://sass-lang.com", target: "blank")
+    | , 
+    = link_to("Compass", "http://compass-style.org", target: "blank")
+    |  & 
+    = link_to("jQuery", "http://jquery.com", target: "blank")
+    |  on top of  
+    = link_to("Ruby on Rails 3", "http://rubyonrails.org", target: "blank")
+    |  hosted freely on an 
+    = link_to("Heroku - Bamboo stack", "http://heroku.com", target: "blank")
+    | .
 
 
