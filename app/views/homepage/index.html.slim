@@ -38,31 +38,55 @@ header
           a href="http://rsonrails.malaio.me/" Garanta sua vaga
 
     .clear
-  /!
-    #palestrantes
-      .container
-        strong.title Palestrantes
-        ul
-          - 7.times do
-            li
-              h2 Fulano de Tal
-              .imgbox
-                span
-                  = image_tag("palestrantes/maiz.jpg", :alt => 'Juan Maiz')
-              p 
-                | Lorem ipsum dolor sit amet. 
-                | Baconinpsum es muinitisso gostoso.
-                | Comendadore faizeamno amasda, lorgas.
-              .links
-                a href="/blog" Blog
-                |  | 
-                a href="/twitter" Twitter
+  #palestrantes
+    .container
+      strong.title Guest Speakers
+      ul
+        li
+          h2 Fábio Akita
+          .imgbox
+            span
+              = image_tag("palestrantes/akita.png", :alt => 'Fábio Akita')
 
-  /!
-    #palestras
-      .container
-        strong.title Palestras
-        iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=320&amp;wkst=1&amp;hl=pt_BR&amp;bgcolor=%23FFFFFF&amp;src=en.brazilian%23holiday%40group.v.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FSao_Paulo" style=" border-width:0 " width="800" height="320" frameborder="0" scrolling="no"
+          .links
+            a href="http://akitaonrails.com/" Blog
+            |  | 
+            a href="http://twitter.com/#!/akitaonrails" target="_blank" Twitter
+        li
+          h2 Daniel Cukier
+          .imgbox
+            span
+              = image_tag("palestrantes/daniel-cukier.jpg", :alt => 'Daniel Cukier')
+
+          .links
+            a href="http://www.agileandart.com/" target="_blank" Blog
+            |  | 
+            a href="http://twitter.com/#!/danicuki" target="_blank" Twitter
+        li
+          h2 Thais Camilo
+          .imgbox
+            span
+              = image_tag("palestrantes/thais-camilo.jpg", :alt => 'Thais Camilo')
+
+          .links
+            a href="http://twitter.com/#!/narwen" target="_blank" Twitter
+        li
+          h2 Daniel Wildt
+          .imgbox
+            span
+              = image_tag("palestrantes/daniel-wildt.jpg", :alt => 'Thais Camilo')
+
+          .links
+            a href="http://danielwildt.com/" target="_blank" Blog
+            |  | 
+            a href="http://twitter.com/dwildt" target="_blank" Twitter
+
+
+/!
+  #palestras
+    .container
+      strong.title Palestras
+      iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=320&amp;wkst=1&amp;hl=pt_BR&amp;bgcolor=%23FFFFFF&amp;src=en.brazilian%23holiday%40group.v.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FSao_Paulo" style=" border-width:0 " width="800" height="320" frameborder="0" scrolling="no"
 
 
   #patrocinio
