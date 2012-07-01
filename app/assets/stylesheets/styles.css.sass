@@ -5,6 +5,12 @@ body
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
 
+  p
+    line-height: 1.5em
+    margin-bottom: 10px
+  strong
+    font-weight: bold
+
 .bg
   z-index: 999
   margin-left: -10px
@@ -204,3 +210,63 @@ footer
   color: $cream
   font-size: 0.7em
   text-align: right
+
+#rsonrails_preview
+  position: relative
+  background: #78F9D2
+  overflow: hidden
+  height: 1px
+  +transition-property(height)
+  +transition-duration(0.5s)
+  .container
+    padding: 20px 0
+  a
+    color: #666
+
+  img
+    background: #383838
+    padding: 10px
+    float: left
+    margin: 3% 0
+    +border-radius(5px)
+  .info
+    +grid(6)
+    padding: 0 30px
+    font-size: 0.9em
+    background: #FFF
+    position: relative
+    float: left
+    width: 40%
+    padding: 1em
+    +box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
+    .lifted:after, .lifted:before
+      +box-shadow(0 15px 10px rgba(0, 0, 0, 0.7))
+      +transform(rotate(-3deg))
+      bottom: 15px
+      left: 10px
+      width: 50%
+      height: 20%
+      max-width: 300px
+      max-height: 100px
+    &:after, &:before
+      content: ""
+      position: absolute
+      z-index: -2
+  .what
+    font-family: "LeagueGothicRegular", Helvetica
+    font-size: 1.4em
+    color: #D33732
+    +grid(2)
+    margin: 35px
+    li
+      margin-bottom: 10px
+      &:last-child
+        margin: 0
+
+body:hover
+  #rsonrails_preview
+    height: 250px
+    border-bottom: 4px solid #FFF
+
+
+
