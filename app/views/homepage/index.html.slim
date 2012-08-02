@@ -63,16 +63,16 @@ header
     .container
       strong.title Guest Speakers
       ul
-        li
-          h2 Fábio Akita
-          .imgbox
-            span
-              = image_tag("palestrantes/akita.png", :alt => 'Fábio Akita')
+        /*li*/
+          /*h2 Fábio Akita*/
+          /*.imgbox*/
+            /*span*/
+              /*= image_tag("palestrantes/akita.png", :alt => 'Fábio Akita')*/
 
-          .links
-            a href="http://akitaonrails.com/" Blog
-            |  | 
-            a href="http://twitter.com/#!/akitaonrails" target="_blank" Twitter
+          /*.links*/
+            /*a href="http://akitaonrails.com/" Blog*/
+            /*|  | */
+            /*a href="http://twitter.com/#!/akitaonrails" target="_blank" Twitter*/
         li
           h2 Daniel Cukier
           .imgbox
@@ -103,18 +103,28 @@ header
             a href="http://twitter.com/dwildt" target="_blank" Twitter
 
 
-/!
-  #palestras
+  /*#palestras*/
     .container
       strong.title Palestras
       iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=320&amp;wkst=1&amp;hl=pt_BR&amp;bgcolor=%23FFFFFF&amp;src=en.brazilian%23holiday%40group.v.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FSao_Paulo" style=" border-width:0 " width="800" height="320" frameborder="0" scrolling="no"
+
+  #aviso
+    .container
+      p
+        | A votação das propostas será encerrada no dia 15 de agosto. 
+        | <a href="http://call4paperz.com/events/rsonrails-2012">Vote aqui!</a>
+      
 
 
   #patrocinio
     .container
       .patrocinio
         strong.title Patrocínio
-        a.btn href="mailto:rsonrails@engage.is" Coloque a sua empresa aqui!
+        /*a.btn href="mailto:rsonrails@engage.is" Coloque a sua empresa aqui!*/
+        ul
+          li
+            a href="http://www.kinghost.com.br"
+              = image_tag("organization/kinghost.png", :alt => "KingHost")
       .organizacao
         strong.title Organização
         ul
@@ -127,9 +137,12 @@ header
               =image_tag("organization/engage.png", :alt => 'Engage')
       .apoio
         strong.title Apoio
-        a.btn href="mailto:rsonrails@engage.is" Tem alguma idéia? Entre em contato!
+        /*a.btn href="mailto:rsonrails@engage.is" Tem alguma idéia? Entre em contato!*/
+        ul
+          li
+            a href="http://caixadeideias.com.br/"
+              = image_tag("organization/caixadeideias.png", :alt => 'Caixa de Ideias')
       .clear
-
 
 footer
   .right
