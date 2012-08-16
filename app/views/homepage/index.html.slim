@@ -111,13 +111,15 @@ header
   #aviso
     .container
       p
-        | A votação das propostas será encerrada no dia 15 de agosto. 
-        | <a href="http://call4paperz.com/events/rsonrails-2012">Vote aqui!</a>
+        ' O povo se pronunciou! 
+        a href="#" Veja aqui
+        '  os palestrantes mais votados.
       
 
 
   #patrocinio
     .container
+      = image_tag 'voting_results.jpg', class: 'results_img'
       .patrocinio
         strong.title Patrocínio
         /*a.btn href="mailto:rsonrails@engage.is" Coloque a sua empresa aqui!*/

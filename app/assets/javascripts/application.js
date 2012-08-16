@@ -11,5 +11,13 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
 //= require_tree .
+
+$(function(){
+	
+	$('#aviso a').click(function(e){
+		e.preventDefault();
+		$('img.results_img').fadeToggle();
+	})
+
+})
