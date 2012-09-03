@@ -193,19 +193,21 @@ header
     &:hover
       background: #C22
 
-  .patrocinio
-    +grid(12)
-
-  .organizacao, .apoio
-    margin-top: 40px
-    float: left
-    +grid(6)
+  .patrocinio, .organizacao, .apoio
+    display: block
+    overflow: hidden
+    margin-top: 20px
+    padding: 20px
+    
     li
       float: left
       margin: 20px 10px
       
       &#plataformatec
         margin: -10px 20px 0 0
+
+      &#facin
+        margin: -20px 20px 0
 
 footer
   +grid-container
