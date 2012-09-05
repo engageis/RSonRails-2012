@@ -17,7 +17,17 @@ $(function(){
 	
 	$('#aviso a').click(function(e){
 		e.preventDefault();
-		$('img.results_img').fadeToggle();
+		$('#agenda').fadeToggle();
 	})
+
+   $('tr', '#agenda tbody').click(function(e){
+      $next = $(this).next();
+      active = $next.hasClass('active');
+      $('tr.description', '#agenda tbody').fadeOut();
+      $('tr', '#agenda tbody').removeClass('active');
+      if($next.hasClass('description') && !active){
+         $next.addClass('active').fadeIn();
+      }
+   })
 
 })

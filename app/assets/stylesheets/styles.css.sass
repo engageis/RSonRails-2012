@@ -173,17 +173,81 @@ header
     font-size: 0.9em
     margin: 20px 10px
 
-
-
-#patrocinio
-  padding: 60px 0
-  color: #6B6A5E
+#conteudo
   border-top: 4px solid #FFF
+  padding: 60px 0
+  color: $gray
   border-bottom: 4px solid #FFF
   background:
     color: #CCC
     image: url(asset_path("bg-patrocinio.png", "image"))
     repeat: repeat
+
+  #agenda
+    display: none
+
+    table
+      max-width: 100%
+      background-color: #333
+      border-collapse: collapse
+      border-spacing: 0
+      border: 1px solid #dddddd
+      border-collapse: separate
+      *border-collapse: collapse
+      border-left: 0
+      color: $cream
+      +border-radius(4px)
+      margin: 0 auto
+      font-family: "LeagueGothicRegular", Helvetica
+      font-size: 1.5em
+
+      +transition(all .3s)
+
+      caption
+        text-transform: uppercase
+        color: $gray
+        text-align: center
+        margin: 20px
+
+      caption + thead tr:first-child th,
+      caption + thead tr:first-child td,
+      thead:first-child tr:first-child th,
+      thead:first-child tr:first-child td 
+        border-top: 0
+
+      thead th
+        vertical-align: bottom
+
+      th
+        text-transform: uppercase
+        color: $lightyellow
+
+      th, td
+        border-left: 1px solid #dddddd
+        padding: 8px
+        line-height: 20px
+        text-align: left
+        vertical-align: top
+        border-top: 1px solid #dddddd
+        cursor: pointer
+
+      tbody tr:nth-child(odd) td,
+      tbody tr:nth-child(odd) th
+        background-color: #222
+
+      tbody tr:hover td,
+      tbody tr:hover th
+        background-color: #111
+
+      tr.description
+        display: none
+
+        p
+          line-height: 1.2em
+          font-size: 90%
+          padding: 5px 12px 8px
+
+
 
   a.btn
     text-decoration: none
