@@ -96,7 +96,7 @@ Na palestra iremos falar sobre todos os princípios do acrônimo SOLID explicand
             :palestrante => "Daniel Cukier & convidados",
             :titulo => "Keynote",
             :terreo => true,
-            :descricao => ""}
+            :descricao => "A balada do empreendedor"}
       ]
   end
 end
