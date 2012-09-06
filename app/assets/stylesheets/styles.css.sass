@@ -229,18 +229,25 @@ header
         text-align: left
         vertical-align: top
         border-top: 1px solid #dddddd
-        cursor: pointer
 
-      tbody tr:nth-child(odd) td,
-      tbody tr:nth-child(odd) th
+      tr.odd
         background-color: #222
 
-      tbody tr:hover td,
-      tbody tr:hover th
+      tr:hover
         background-color: #111
+
+      tr.no-program:hover
+        background-color: inherit
+
+        &.odd
+          background-color: #222
+
+      tr.odd, tr.even
+        cursor: pointer
 
       tr.description
         display: none
+        background-color: black
 
         p
           line-height: 1.2em

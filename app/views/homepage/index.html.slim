@@ -124,21 +124,21 @@ header
               th
                 | Local
           tbody
-            - @programacao.each do |programa|
-              tr
-                td 
-                  =programa[:horario]
-                td 
-                  =programa[:titulo]
-                td 
-                  =programa[:palestrante]
-                td 
-                  =programa[:terreo] ? "Térreo" : "Sala 516"
+          - @programacao.each do |programa|
+            tr[class="#{cycle('odd', 'even') + (programa[:descricao] != "" ? "" : " no-program")}"]
+              td 
+                =programa[:horario]
+              td 
+                =programa[:titulo]
+              td 
+                =programa[:palestrante]
+              td 
+                =programa[:terreo] ? "Térreo" : "Sala 516"
 
-                -if programa[:descricao] != ""
-                  tr.description
-                    td colspan="4"
-                      =simple_format programa[:descricao]
+              -if programa[:descricao] != ""
+                tr.description
+                  td colspan="4"
+                    =simple_format programa[:descricao]
 
       .patrocinio
         strong.title Patrocínio
