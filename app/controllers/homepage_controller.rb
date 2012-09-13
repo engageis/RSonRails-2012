@@ -21,9 +21,13 @@ class HomepageController < ApplicationController
             :descricao => "Trabalhando com bases de código em Ruby/Rails com dezenas ou centenas de milhares de linhas de código que estão se deteriorando? Cansado de ver código que se parece com ASP em Ruby ou com abusos de meta-programação? Essa palestra mostra lições práticas aprendidas pelo palestrante em projetos Ruby de porte, incluindo seu projeto atual, mostrando como lidar com a situação e evoluir o código."},
          {:horario => "10:00",
             :palestrante => "Thais Camilo",
-            :titulo => "",
+            :titulo => "Mantendo seus testes nos trilhos ",
             :terreo => true,
-            :descricao => ""},
+            :descricao => "A comunidade Ruby on Rails é uma grande incentivadora de testes.
+
+            Muitas ferramentas são escritas e muitos livros são publicados sobre o assunto. Porém, como tudo em desenvolvimento de software, algumas coisas só se aprende com a prática.
+
+            Nessa palestra serão abordadas algumas boas práticas em teste que aprendi nos últimos anos trabalhando na Hashrocket."},
          {:horario => "10:00",
             :palestrante => "Rondy",
             :titulo => "Desmistificando o Asset Pipeline",
@@ -96,7 +100,7 @@ Na palestra iremos falar sobre todos os princípios do acrônimo SOLID explicand
             :palestrante => "Daniel Cukier & convidados",
             :titulo => "Keynote",
             :terreo => true,
-            :descricao => "A balada do empreendedor"}
+            :descricao => "A valsa do empreendedor"}
       ]
   end
 end
