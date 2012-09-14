@@ -78,7 +78,7 @@ O SOLID é um conjunto de princípios que ajudam para que essas modificações s
 Na palestra iremos falar sobre todos os princípios do acrônimo SOLID explicando-os e exemplificando com código Ruby."},
          {:horario => "15:00",
             :palestrante => "Daniel Wildt",
-            :titulo => "",
+            :titulo => "Queria empreender mas não tenho tempo.",
             :terreo => true,
             :descricao => ""},
          {:horario => "15:00",
